@@ -11,6 +11,14 @@ public class UIHandler : MonoBehaviour {
         text.text = num.ToString();
     }
 
+    public void ToText(string num) {
+        text.text = num;
+    }
+
+    public string GetText() {
+        return text.text;
+    }
+
     public void UpdateText() {
         num++;
         text.text = num.ToString();

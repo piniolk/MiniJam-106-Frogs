@@ -12,7 +12,6 @@ public class ObjectsSpawn : MonoBehaviour {
     float xMin = -40f;
     float xMax = 15f;
     float yMin = -85f;
-    float yMax = -30f;
     float yFoodMin = 0f;
     float yFoodMax = 80f;
     float xEnemyMin = -30f;
@@ -49,7 +48,7 @@ public class ObjectsSpawn : MonoBehaviour {
     }
 
     void EnemySpawn() {
-        for (int i = 0; i <= minFood; i++) {
+        for (int i = 0; i <= minEnemy; i++) {
             Vector3 newVec = new Vector3(Random.Range(xEnemyMin, xEnemyMax), Random.Range(yEnemyMin, yEnemyMax), 0);
             GameObject newObj = Instantiate(enemyObj, newVec, Quaternion.identity) as GameObject;
         }
